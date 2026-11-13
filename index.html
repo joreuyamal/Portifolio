@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#071426">
+    <meta name="description" content="Portfólio de João Lucas, estudante finalista do curso Técnico em Desenvolvimento de Sistemas.">
+    <title>João Lucas | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="João Lucas, início"><span class="brand-mark">&lt;/&gt;</span><span>joao<span class="brand-dot">.</span>dev</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu"><span></span><span></span></button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#sobre">Sobre</a></li><li><a href="#objetivo">Objetivo</a></li><li><a href="#habilidades">Habilidades</a></li><li><a href="#formacao">Formação</a></li><li><a href="#projetos">Projetos</a></li><li><a class="nav-contact" href="#contato">Contato <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero section container" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> DISPONÍVEL PARA APRENDER E COLABORAR</p>
+          <h1>Olá, eu sou<br><span class="gradient-text">João Lucas.</span></h1>
+          <p class="hero-role">Finalizando o curso técnico em <span>Desenvolvimento de Sistemas</span></p>
+          <p class="hero-description">Estou concluindo minha formação técnica, participo da Liga STEAM e, em 2026, conquistei o 3º lugar no JEMG.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#projetos">Ver projetos <span aria-hidden="true">↓</span></a><a class="button button-ghost" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustração abstrata de código">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-glow"></div>
+          <figure class="portrait-card">
+            <img src="foto-perfil.jpg" alt="Foto de perfil de João Lucas" onerror="this.hidden=true">
+            <figcaption>ADICIONE SUA FOTO</figcaption>
+          </figure>
+          <div class="code-card"><div class="code-top"><span></span><span></span><span></span><small>sobre-mim.js</small></div><pre><code><span class="code-purple">const</span> dev = {
+  nome: <span class="code-green">'João Lucas'</span>,
+  foco: <span class="code-green">'Desenvolvimento Web'</span>,
+  aprendendo: [
+    <span class="code-cyan">'JavaScript'</span>,
+    <span class="code-cyan">'React'</span>
+  ],
+  motivação: <span class="code-green">'sempre evoluir'</span>
+};</code></pre><div class="code-cursor"></div></div>
+          <span class="float-tag tag-html">&lt;html&gt;</span><span class="float-tag tag-js">JS</span><span class="float-tag tag-brace">{ }</span>
+        </div>
+        <a class="scroll-cue" href="#sobre"><span></span> role para explorar</a>
+      </section>
+
+      <section class="section section-muted" id="sobre">
+        <div class="container about-grid"><div><p class="eyebrow">01 / SOBRE MIM</p><h2>Aprender fazendo.<br><span class="gradient-text">Evoluir sempre.</span></h2></div><div class="about-copy"><p>Estou finalizando o curso Técnico em Desenvolvimento de Sistemas e participo da Liga STEAM.</p><p>Em 2026, conquistei o 3º lugar no JEMG. Essa conquista faz parte da minha trajetória de aprendizado.</p><div class="about-facts"><div><strong>3º</strong><small>lugar no JEMG</small></div><div><strong>2026</strong><small>conquista</small></div><div><strong>STEAM</strong><small>liga</small></div></div></div></div>
+      </section>
+
+      <section class="section objective-section" id="objetivo"><div class="container objective-inner"><p class="eyebrow">OBJETIVO PROFISSIONAL</p><h2>Quero transformar ideias<br><span class="gradient-text">em soluções que ajudam pessoas.</span></h2><p>Busco crescer na área de tecnologia, aprender com novos desafios e contribuir com dedicação em projetos de desenvolvimento. Cada coisa que aprendo e crio me aproxima de construir soluções úteis de verdade.</p></div></section>
+
+      <section class="section container" id="habilidades">
+        <div class="section-heading"><div><p class="eyebrow">02 / HABILIDADES</p><h2>Ferramentas que estou<br><span class="gradient-text">usando e aprendendo.</span></h2></div><p class="section-intro">Uma base em construção, desenvolvida com estudo, prática e projetos.</p></div>
+        <div class="skills-grid">
+          <button class="skill-card" type="button" data-skill="html"><span class="skill-icon orange">5</span><span class="skill-text"><strong>HTML5</strong><span>Estrutura semântica e acessível</span></span><span class="skill-level">EM PRÁTICA</span></button>
+          <button class="skill-card" type="button" data-skill="css"><span class="skill-icon blue">✳</span><span class="skill-text"><strong>CSS3</strong><span>Layouts responsivos e animações</span></span><span class="skill-level">EM PRÁTICA</span></button>
+          <button class="skill-card" type="button" data-skill="javascript"><span class="skill-icon yellow">JS</span><span class="skill-text"><strong>JavaScript</strong><span>Interatividade e lógica</span></span><span class="skill-level">APRENDENDO</span></button>
+          <button class="skill-card" type="button" data-skill="git"><span class="skill-icon white">⌘</span><span class="skill-text"><strong>Git &amp; GitHub</strong><span>Versionamento de projetos</span></span><span class="skill-level">APRENDENDO</span></button>
+          <button class="skill-card" type="button" data-skill="figma"><span class="skill-icon cyan">▦</span><span class="skill-text"><strong>Figma</strong><span>Prototipação de interfaces</span></span><span class="skill-level">BÁSICO</span></button>
+          <button class="skill-card" type="button" data-skill="sql"><span class="skill-icon purple">▤</span><span class="skill-text"><strong>SQL</strong><span>Fundamentos de banco de dados</span></span><span class="skill-level">BÁSICO</span></button>
+          <button class="skill-card" type="button" data-skill="ia"><span class="skill-icon purple">AI</span><span class="skill-text"><strong>Inteligência Artificial</strong><span>Apoio ao aprendizado e à programação</span></span><span class="skill-level">EM EXPLORAÇÃO</span></button>
+        </div>
+        <aside class="skill-detail" id="skill-detail" aria-live="polite" hidden><button class="skill-detail-close" type="button" aria-label="Fechar explicação">×</button><p class="eyebrow">SAIBA MAIS</p><h3></h3><p></p></aside>
+      </section>
+
+      <section class="section section-muted" id="formacao"><div class="container education-grid"><div><p class="eyebrow">03 / FORMAÇÃO</p><h2>Construindo uma<br><span class="gradient-text">base sólida.</span></h2><p class="section-intro">Estudo contínuo, prática e troca de conhecimento fazem parte do caminho.</p></div><div class="timeline"><article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">EM ANDAMENTO</p><h3>Terminando a escola</h3><p>Também estou finalizando o curso Técnico em Desenvolvimento de Sistemas.</p><span class="timeline-tag">Ensino técnico</span></article></div></div></section>
+
+      <section class="section container" id="projetos"><div class="section-heading"><div><p class="eyebrow">04 / PROJETOS</p><h2>Ideias que ganham vida.<br><span class="gradient-text">Explore cada projeto.</span></h2></div><p class="section-intro">Clique em um cartão para conhecer meus projetos e minha participação na Liga STEAM.</p></div>
+        <div class="projects-grid">
+          <article class="project-card"><div class="project-art art-memory"><div class="memory-preview" aria-hidden="true"><span>★</span><span>?</span><span>?</span><span>★</span></div><span class="art-label">JOGO · MEMÓRIA</span></div><div class="project-info"><div class="project-title"><h3>Jogo da Memória</h3></div><p>Jogo de memória que desenvolvi: encontre os pares e teste sua concentração.</p><div class="project-tags"><span>Jogo</span><span>Memória</span></div><button class="project-open" type="button" data-project="memoria">Jogar demonstração <span aria-hidden="true">↗</span></button></div></article>
+          <article class="project-card"><div class="project-art art-quizzes"><div class="quiz-preview"><span>?</span><b>QUIZ</b><i>ESCOLHA SUA RESPOSTA</i></div><span class="art-label">QUIZ · PERGUNTAS</span></div><div class="project-info"><div class="project-title"><h3>Meus Quizzes</h3></div><p>Criei vários quizzes interativos para responder perguntas e testar conhecimentos.</p><div class="project-tags"><span>Quiz</span><span>Perguntas</span></div><button class="project-open" type="button" data-project="quizzes">Experimentar quiz <span aria-hidden="true">↗</span></button></div></article>
+          <article class="project-card"><div class="project-art art-steam"><div class="steam-preview"><span>STEAM</span><b>CRIAR · EXPLORAR · APRENDER</b><i>MINHA PARTICIPAÇÃO</i></div><span class="art-label">LIGA · STEAM</span></div><div class="project-info"><div class="project-title"><h3>Liga STEAM</h3></div><p>Participo da Liga STEAM como parte da minha trajetória de aprendizado.</p><div class="project-tags"><span>Participação</span><span>STEAM</span></div><button class="project-open" type="button" data-project="steam">Ver participação <span aria-hidden="true">↗</span></button></div></article>
+          <article class="project-card"><div class="project-art art-jemg"><div class="jemg-preview"><strong>3º</strong><span>LUGAR</span><b>JEMG · 2026</b></div><span class="art-label">CONQUISTA · 2026</span></div><div class="project-info"><div class="project-title"><h3>3º lugar no JEMG</h3></div><p>Conquista do 3º lugar nos Jogos Escolares de Minas Gerais, em 2026.</p><div class="project-tags"><span>JEMG</span><span>2026</span></div><button class="project-open" type="button" data-project="jemg">Ver conquista <span aria-hidden="true">↗</span></button></div></article>
+          <article class="project-card"><div class="project-art art-dashboard"><div class="dash-window"><div class="dash-bar"><i></i><i></i><i></i></div><div class="dash-body"><div class="dash-side"></div><div class="dash-content"><b></b><div class="dash-stats"><i></i><i></i><i></i></div><div class="dash-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div></div></div><span class="art-label">01 — WEB APP</span></div><div class="project-info"><div class="project-title"><h3>Taskflow</h3></div><p>Organizador de tarefas com foco em simplicidade e produtividade no dia a dia.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><button class="project-open" type="button" data-project="taskflow">Explorar projeto <span aria-hidden="true">↗</span></button></div></article>
+          <article class="project-card"><div class="project-art art-weather"><div class="weather-widget"><span class="weather-location">SÃO PAULO, BR</span><span class="weather-sun">☼</span><strong>24°</strong><span class="weather-caption">céu aberto</span><div class="weather-line"></div><div class="weather-details"><span>UMIDADE <b>62%</b></span><span>VENTO <b>12 km/h</b></span></div></div><span class="art-label">02 — INTERFACE</span></div><div class="project-info"><div class="project-title"><h3>Clima Agora</h3></div><p>Interface de consulta meteorológica com visualização clara das condições do tempo.</p><div class="project-tags"><span>JavaScript</span><span>API</span><span>CSS</span></div><button class="project-open" type="button" data-project="clima">Explorar projeto <span aria-hidden="true">↗</span></button></div></article>
+          <article class="project-card"><div class="project-art art-landing"><div class="landing-window"><div class="landing-nav"><b>verde<span>.</span></b><i></i><i></i><i></i><em></em></div><div class="landing-content"><small>PEQUENAS ESCOLHAS, GRANDE IMPACTO</small><strong>Mais verde<br>no seu dia.</strong><span></span><div class="landing-orb"></div></div></div><span class="art-label">03 — LANDING PAGE</span></div><div class="project-info"><div class="project-title"><h3>Verde Perto</h3></div><p>Landing page conceitual para uma iniciativa de consumo local e sustentável.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>Responsivo</span></div><button class="project-open" type="button" data-project="verde">Explorar projeto <span aria-hidden="true">↗</span></button></div></article>
+        </div><p class="fiction-note projects-note">Jogo da memória e quizzes feitos por mim; também participo da Liga STEAM e conquistei o 3º lugar no JEMG em 2026. Os outros cartões são ideias demonstrativas.</p>
+        <dialog class="project-dialog" aria-labelledby="project-dialog-title"><button class="dialog-close" type="button" aria-label="Fechar detalhes">×</button><p class="eyebrow">PROJETO CONCEITUAL</p><h3 id="project-dialog-title"></h3><p class="dialog-description"></p><div class="dialog-extra"></div><p class="dialog-note">Esta é uma ideia demonstrativa; os dados exibidos não vêm de um serviço real.</p></dialog>
+      </section>
+
+      <section class="section contact-section" id="contato"><div class="container contact-inner"><p class="eyebrow">05 / CONTATO</p><h2>Tem uma ideia?<br><span class="gradient-text">Vamos conversar.</span></h2><p>Estou aberto a aprender, colaborar e conhecer novos projetos.</p><div class="contact-links"><a class="button button-primary" href="mailto:joreucriaderadio@gmail.com">Enviar e-mail <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="tel:+5538997331210">Ligar: (38) 99733-1210</a><a class="button button-ghost" href="https://wa.me/5538997331210" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp <span aria-hidden="true">↗</span></a></div><p class="fiction-note">Curvelo, MG · joreucriaderadio@gmail.com · (38) 99733-1210</p></div><div class="contact-decoration" aria-hidden="true">&lt;/&gt;</div></section>
+    </main>
+    <footer class="footer"><div class="container footer-inner"><a class="brand" href="#inicio"><span class="brand-mark">&lt;/&gt;</span><span>joao<span class="brand-dot">.</span>dev</span></a><p>Feito com curiosidade e café <span>☕</span></p><p>© <span id="year">2026</span> João Lucas</p></div></footer>
+  </body>
+</html>
