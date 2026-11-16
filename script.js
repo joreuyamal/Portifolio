@@ -77,9 +77,9 @@ const projectExamples = {
     note: 'JEMG · Handebol · Jogos Escolares de Minas Gerais · 2026.'
   },
   steam: {
-    title: 'Liga STEAM',
-    type: 'MINHA PARTICIPAÇÃO',
-    description: 'Participo da Liga STEAM, uma experiência de aprendizagem que integra ciência, tecnologia, engenharia, artes e matemática. Essa combinação incentiva a investigar desafios, compartilhar ideias e pensar em soluções criativas. Para mim, participar da Liga fortalece a curiosidade e a vontade de aprender e criar.',
+    title: 'Liga STEAM · 2026',
+    type: 'MINHA PARTICIPAÇÃO · 2026',
+    description: 'Participo da Liga STEAM em 2026, uma experiência de aprendizagem que integra ciência, tecnologia, engenharia, artes e matemática. Essa combinação incentiva a investigar desafios, compartilhar ideias e pensar em soluções criativas. Para mim, participar da Liga fortalece a curiosidade e a vontade de aprender e criar.',
     content: '<div class="steam-detail"><span class="steam-detail-mark">STEAM</span><p>A proposta da Liga é conectar diferentes áreas do conhecimento e incentivar a criatividade, a colaboração e a resolução de problemas. Essa experiência faz parte da minha trajetória de aprendizado.</p></div>',
     note: 'Mais detalhes sobre atividades e projetos da Liga STEAM podem ser acrescentados quando você quiser.'
   },
