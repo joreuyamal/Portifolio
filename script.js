@@ -43,13 +43,13 @@ sections.forEach((section) => sectionObserver.observe(section));
 document.querySelector('#year').textContent = new Date().getFullYear();
 
 const skillInfo = {
-  html: ['HTML5', 'HTML é a linguagem que organiza o conteúdo de uma página, como títulos, textos, imagens, links e formulários. As tags semânticas também ajudam leitores de tela e mecanismos de busca a entender cada parte do site.'],
-  css: ['CSS3', 'CSS define a aparência das páginas: cores, fontes, espaçamentos e animações. Com recursos responsivos, o layout se adapta a celulares, tablets e computadores.'],
-  javascript: ['JavaScript', 'JavaScript é uma linguagem de programação que dá comportamento às páginas. Ela pode responder a cliques, validar formulários, atualizar conteúdo sem recarregar a página e se comunicar com serviços na internet.'],
-  git: ['Git & GitHub', 'Git registra as mudanças feitas nos arquivos de um projeto e permite voltar a versões anteriores. GitHub guarda repositórios na internet e facilita compartilhar código e colaborar com outras pessoas.'],
-  figma: ['Figma', 'Figma é uma ferramenta online para criar telas e protótipos de sites e aplicativos. Ela ajuda a planejar a aparência e testar a navegação antes de começar a programar.'],
-  sql: ['SQL', 'SQL é uma linguagem usada para consultar e organizar informações em bancos de dados. Com ela, é possível buscar, adicionar, alterar e remover registros, como usuários ou produtos.'],
-  ia: ['Inteligência Artificial', 'Uso ferramentas de inteligência artificial como apoio para estudar tecnologia, explorar ideias, entender conceitos e auxiliar na programação. A IA é um recurso de apoio: reviso as respostas e procuro compreender o que estou usando.']
+  html: ['HTML5', 'Uso HTML para estruturar o conteúdo das páginas: títulos, parágrafos, imagens, links, botões e formulários. Também organizo as áreas do site com elementos semânticos, que ajudam a deixar a navegação mais clara e acessível. Nos meus projetos, ele forma a base de cada página.'],
+  css: ['CSS3', 'Uso CSS para definir como as páginas aparecem: cores, fontes, espaçamentos e organização dos elementos. Também ajusto os layouts para que funcionem em diferentes tamanhos de tela e uso estados visuais para indicar ações e interações.'],
+  javascript: ['JavaScript', 'Uso JavaScript para programar a lógica e as interações das páginas. Nos meus projetos, ele controla as jogadas do Jogo da Memória, as perguntas e a pontuação dos quizzes, além de responder às ações de quem está usando a página.'],
+  git: ['Git & GitHub', 'Git ajuda a acompanhar as alterações feitas nos arquivos e a organizar versões do projeto. O GitHub permite guardar repositórios online e compartilhar o código.'],
+  figma: ['Figma', 'Figma é uma ferramenta de design usada para criar telas e protótipos de sites e aplicativos antes ou durante o desenvolvimento.'],
+  sql: ['SQL', 'SQL é usado para consultar e organizar informações em bancos de dados, como registros de usuários ou produtos.'],
+  ia: ['Inteligência Artificial', 'Uso recursos de inteligência artificial como apoio para estudar, explorar ideias e entender conceitos de programação.']
 };
 
 const skillDetail = document.querySelector('#skill-detail');
@@ -70,48 +70,48 @@ skillDetail.querySelector('.skill-detail-close').addEventListener('click', () =>
 const projectDialog = document.querySelector('.project-dialog');
 const projectExamples = {
   jemg: {
-    title: '3º lugar no JEMG',
+    title: '3º lugar no JEMG de handebol',
     type: 'CONQUISTA · 2026',
-    description: 'Conquistei o 3º lugar nos Jogos Escolares de Minas Gerais (JEMG), em 2026.',
-    content: '<div class="steam-detail"><span class="jemg-detail-mark">3º</span><p>Uma conquista importante da minha trajetória em 2026.</p></div>',
-    note: 'JEMG · Jogos Escolares de Minas Gerais · 2026.'
+    description: 'Com orgulho, conquistei o 3º lugar no handebol dos Jogos Escolares de Minas Gerais (JEMG), em 2026. Essa experiência representa dedicação, disciplina e uma lembrança especial da minha trajetória escolar.',
+    content: '<div class="steam-detail"><span class="jemg-detail-mark">3º</span><p>Conquistei o 3º lugar no handebol do JEMG em 2026.</p></div>',
+    note: 'JEMG · Handebol · Jogos Escolares de Minas Gerais · 2026.'
   },
   steam: {
     title: 'Liga STEAM',
     type: 'MINHA PARTICIPAÇÃO',
-    description: 'Participo da Liga STEAM como parte da minha trajetória de aprendizado.',
-    content: '<div class="steam-detail"><span class="steam-detail-mark">STEAM</span><p>Esta participação também faz parte do meu portfólio.</p></div>',
+    description: 'Participo da Liga STEAM, uma experiência de aprendizagem que integra ciência, tecnologia, engenharia, artes e matemática. Essa combinação incentiva a investigar desafios, compartilhar ideias e pensar em soluções criativas. Para mim, participar da Liga fortalece a curiosidade e a vontade de aprender e criar.',
+    content: '<div class="steam-detail"><span class="steam-detail-mark">STEAM</span><p>A proposta da Liga é conectar diferentes áreas do conhecimento e incentivar a criatividade, a colaboração e a resolução de problemas. Essa experiência faz parte da minha trajetória de aprendizado.</p></div>',
     note: 'Mais detalhes sobre atividades e projetos da Liga STEAM podem ser acrescentados quando você quiser.'
   },
   memoria: {
     title: 'Jogo da Memória',
     type: 'PROJETO FEITO POR MIM',
-    description: 'Vire as cartas e encontre os pares iguais. Tente completar com o menor número de jogadas.',
+    description: 'Desenvolvi este jogo para praticar lógica e interatividade com JavaScript. Vire as cartas, encontre os dois pares e acompanhe o número de jogadas. O objetivo é concluir usando o menor número possível de tentativas.',
     content: '<div class="memory-game" aria-label="Jogo da memória"><p>Jogadas: <strong class="memory-moves">0</strong></p><div class="memory-board"><button type="button" data-card="⭐" aria-label="Carta fechada">?</button><button type="button" data-card="🍀" aria-label="Carta fechada">?</button><button type="button" data-card="🍀" aria-label="Carta fechada">?</button><button type="button" data-card="⭐" aria-label="Carta fechada">?</button></div><p class="memory-status" aria-live="polite">Encontre os dois pares.</p><button class="demo-secondary" type="button" data-reset-memory>Recomeçar</button></div>',
     note: 'Demonstração interativa do jogo da memória.'
   },
   quizzes: {
     title: 'Meus Quizzes',
     type: 'PROJETO FEITO POR MIM',
-    description: 'Criei vários quizzes. Experimente esta pequena rodada de perguntas e veja sua pontuação.',
+    description: 'Criei quizzes interativos para testar conhecimentos de forma leve. Nesta demonstração, escolha uma alternativa em cada pergunta, veja o retorno na hora e confira sua pontuação ao final.',
     content: '<div class="quiz-demo" data-question="0"><p class="quiz-progress">Pergunta 1 de 2</p><p class="quiz-question">Qual linguagem dá interatividade às páginas web?</p><div class="quiz-answers"><button type="button" data-answer="errada">HTML</button><button type="button" data-answer="certa">JavaScript</button><button type="button" data-answer="errada">CSS</button></div><p class="quiz-feedback" aria-live="polite">Escolha uma resposta.</p><p>Pontuação: <strong class="quiz-score">0</strong> / 2</p><button class="demo-secondary" type="button" data-next-question hidden>Próxima pergunta</button></div>',
     note: 'Perguntas de exemplo para demonstrar a interação.'
   },
   taskflow: {
     title: 'Taskflow',
-    description: 'Um organizador simples para anotar tarefas e acompanhar o que já foi concluído.',
+    description: 'Conceito de organizador de tarefas pensado para ajudar a planejar atividades do dia a dia. Na demonstração, adicione tarefas e marque as que já concluiu. A interface foi criada para ser simples e fácil de usar.',
     content: '<div class="task-demo"><label for="demo-task">Experimente adicionar uma tarefa:</label><div class="task-entry"><input id="demo-task" maxlength="60" placeholder="Ex.: estudar JavaScript"><button type="button" data-add-task>Adicionar</button></div><ul class="demo-task-list"><li><label><input type="checkbox"> Planejar a semana</label></li></ul></div>',
     note: 'Demonstração local: as tarefas ficam apenas nesta página.'
   },
   clima: {
     title: 'Clima Agora',
-    description: 'Uma interface de clima com leitura rápida da temperatura e das condições da cidade.',
+    description: 'Conceito de interface para consultar as condições do tempo de forma rápida. A demonstração permite escolher uma cidade e visualizar informações ilustrativas em uma apresentação organizada.',
     content: '<div class="weather-demo"><label for="demo-city">Escolha uma cidade:</label><select id="demo-city"><option value="São Paulo: 24° · céu aberto">São Paulo</option><option value="Curitiba: 18° · parcialmente nublado">Curitiba</option><option value="Salvador: 29° · ensolarado">Salvador</option></select><p class="weather-result" aria-live="polite">São Paulo: 24° · céu aberto</p></div>',
     note: 'Demonstração com valores ilustrativos, sem consulta meteorológica em tempo real.'
   },
   verde: {
     title: 'Verde Perto',
-    description: 'Uma página conceitual para descobrir maneiras simples de apoiar iniciativas locais e reduzir desperdício.',
+    description: 'Landing page conceitual para uma iniciativa de consumo local e sustentável. A proposta apresenta sugestões simples para apoiar produtores da região e reduzir desperdício, com uma interface visual e responsiva.',
     content: '<div class="green-demo"><p>Escolha uma ideia para ver uma sugestão:</p><div class="green-actions"><button type="button" data-tip="Procure uma feira ou produtor do seu bairro e priorize alimentos da estação.">Comprar local</button><button type="button" data-tip="Leve uma sacola reutilizável e planeje as compras para evitar desperdício.">Reduzir desperdício</button><button type="button" data-tip="Compartilhe ferramentas, livros ou objetos que você usa pouco com a comunidade.">Compartilhar mais</button></div><p class="green-result" aria-live="polite">As sugestões aparecem aqui.</p></div>',
     note: 'Ideias gerais para esta demonstração conceitual.'
   }
